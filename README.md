@@ -17,6 +17,7 @@ Markdown, and some code examples, about React refs, from a function component pe
 * [`useImperativeHandle`](#useimperativehandle)
 * [`forwardRef`](#reactforwardref)
 * [Forwarding Refs](#forwarding-refs)
+* [`React.createRef`](#reactcreateref)
 
 <br />
 <br />
@@ -299,4 +300,16 @@ const FancyButtonParent = () => {
 Docs: https://reactjs.org/docs/forwarding-refs.html
 
 [Go top](#functional-react-refs) |
-[Previous](#reactforwardref)
+[Previous](#reactforwardref) |
+[Next](#reactcreateref)
+
+<br />
+<br />
+<br />
+
+## `React.createRef`
+
+Docs: https://reactjs.org/docs/react-api.html#reactcreateref
+
+[Go top](#functional-react-refs) |
+[Previous](#forwarding-refs)
