@@ -325,7 +325,7 @@ Docs: https://reactjs.org/docs/forwarding-refs.html
 [Previous](#reactforwardref) |
 [Next](#reactcreateref)
 
-**To be continued**
+**To be continued...**
 
 <br />
 <br />
