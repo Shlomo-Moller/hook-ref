@@ -1,7 +1,7 @@
 const App = () => {
   return (
     <div>
-      Learn useRef()
+      <h1>Functional React Refs</h1>
     </div>
   )
 }
