@@ -256,13 +256,39 @@ const FancyInputParent = () => {
 <br />
 <br />
 
-## React.forwardRef
+## `React.forwardRef`
 
 Docs: https://reactjs.org/docs/react-api.html#reactforwardref
 
 [Go top](#functional-react-refs) |
 [Previous](#useimperativehandle) |
 [Next](#forwarding-refs)
+
+* `React.forwardRef` creates a React component that forwards the `ref` attribute it receives to another component below in the tree.
+* This technique is not very common but is particularly useful in two scenarios:
+		* Forwarding refs to DOM components
+		* Forwarding refs in higher-order-components
+* `React.forwardRef` accepts a rendering function, which... :
+		* React calls with `props` and `ref` arguments, and -
+		* should return a React node.
+
+```jsx
+const FancyButton = forwardRef((props, ref) => (
+	<button ref={ref} onClick={props.onClick}>
+		{props.children}
+	</button>
+))
+
+const FancyButtonParent = () => {
+	const ref = useRef()
+
+	return (
+		<FancyButton ref={ref} onClick={() => console.log(ref.current)}>
+			Click Me!
+		</FancyButton>
+	)
+}
+```
 
 <br />
 <br />
