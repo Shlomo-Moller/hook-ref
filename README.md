@@ -1,6 +1,6 @@
 # [Functional](# 'Function-components - based') React Refs
 
-Markdown, and some code examples, about React refs, from a function component prespective.
+Markdown, and some code examples, about React refs, from a function component perspective.
 
 <br />
 <br />
