@@ -3,6 +3,7 @@ import Timer from './components/Timer'
 import MeasureExample from './components/MeasureExample'
 import FancyInputParent from './components/FancyInputParent'
 import FancyButtonParent from './components/FancyButtonParent'
+import CustomTextInput from './components/CustomTextInput'
 
 const App = () => {
   return (
@@ -23,6 +24,9 @@ const App = () => {
 
       <h2>FancyButtonParent</h2>
       <FancyButtonParent />
+
+      <h2>CustomTextInput</h2>
+      <CustomTextInput />
     </div>
   )
 }
