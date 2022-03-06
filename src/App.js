@@ -1,4 +1,5 @@
 import TextInputWithFocusButton from './components/TextInputWithFocusButton'
+import Timer from './components/Timer'
 
 const App = () => {
   return (
@@ -7,6 +8,9 @@ const App = () => {
 
       <h2>TextInputWithFocusButton</h2>
       <TextInputWithFocusButton />
+
+      <h2>Timer</h2>
+      <Timer />
     </div>
   )
 }
