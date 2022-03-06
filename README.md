@@ -181,6 +181,26 @@ React also supports another way to set refs called “callback refs”, which gi
 
 The callback receives the React component instance or HTML DOM element, which can be stored and accessed elsewhere.
 
+```jsx
+const CustomTextInput = () => {
+
+	let inputRef
+
+	const setInputRef = useCallback(element => inputRef = element, [])
+
+	return (
+		<>
+			<input type='text' ref={setInputRef} />
+			<button onClick={() => inputRef.focus()}>
+				Focus text input
+			</button>
+		</>
+	)
+}
+```
+
+Also see [previous example](#measure-dom-node).
+
 <br />
 <br />
 <br />
@@ -313,3 +333,5 @@ Docs: https://reactjs.org/docs/react-api.html#reactcreateref
 
 [Go top](#functional-react-refs) |
 [Previous](#forwarding-refs)
+
+`React.createRef` creates a ref that can be attached to React elements via the `ref` attribute.
