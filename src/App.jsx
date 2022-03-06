@@ -2,6 +2,7 @@ import TextInputWithFocusButton from './components/TextInputWithFocusButton'
 import Timer from './components/Timer'
 import MeasureExample from './components/MeasureExample'
 import FancyInputParent from './components/FancyInputParent'
+import FancyButtonParent from './components/FancyButtonParent'
 
 const App = () => {
   return (
@@ -19,6 +20,9 @@ const App = () => {
 
       <h2>FancyInputParent</h2>
       <FancyInputParent />
+
+      <h2>FancyButtonParent</h2>
+      <FancyButtonParent />
     </div>
   )
 }
