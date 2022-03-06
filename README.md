@@ -26,8 +26,8 @@ Markdown, and some code examples, about React refs, from a function component pr
 
 Docs: https://reactjs.org/docs/hooks-reference.html#useref
 
-[Go top](#table-of-contents)
-[Previous](#table-of-contents)
+[Go top](#table-of-contents) |
+[Previous](#table-of-contents) |
 [Next](#refs-and-the-dom)
 
 ```jsx
@@ -73,8 +73,8 @@ instead.
 
 Docs: https://reactjs.org/docs/refs-and-the-dom.html
 
-[Go top](#table-of-contents)
-[Previous](#useref)
+[Go top](#table-of-contents) |
+[Previous](#useref) |
 [Next](#store-values)
 
 To allow taking a `ref` to your **function component**, you can use
@@ -101,8 +101,8 @@ If you use React 16.2 or lower, or if you need more flexibility than provided by
 
 Docs: https://reactjs.org/docs/hooks-faq.html#is-there-something-like-instance-variables
 
-[Go top](#table-of-contents)
-[Previous](#refs-and-the-dom)
+[Go top](#table-of-contents) |
+[Previous](#refs-and-the-dom) |
 [Next](#measure-dom-node)
 
 The `useRef()` Hook isn’t just for DOM refs.
@@ -137,8 +137,8 @@ const Timer = () => {
 
 Docs: https://reactjs.org/docs/hooks-faq.html#how-can-i-measure-a-dom-node
 
-[Go top](#table-of-contents)
-[Previous](#store-values)
+[Go top](#table-of-contents) |
+[Previous](#store-values) |
 [Next](#callback-refs)
 
 We can use
@@ -172,8 +172,8 @@ const MeasureExample = () => {
 
 Docs: https://reactjs.org/docs/refs-and-the-dom.html#callback-refs
 
-[Go top](#table-of-contents)
-[Previous](#measure-dom-node)
+[Go top](#table-of-contents) |
+[Previous](#measure-dom-node) |
 [Next](#setting-a-ref-to-a-function-component)
 
 React also supports another way to set refs called “callback refs”, which gives more fine-grain control over when refs are set and unset.
@@ -188,8 +188,8 @@ The callback receives the React component instance or HTML DOM element, which ca
 
 Docs: https://reactjs.org/docs/hooks-faq.html#can-i-make-a-ref-to-a-function-component
 
-[Go top](#table-of-contents)
-[Previous](#callback-refs)
+[Go top](#table-of-contents) |
+[Previous](#callback-refs) |
 [Next](#useimperativehandle)
 
 While you shouldn’t need this often, you may expose some imperative methods to a parent component with the
@@ -204,8 +204,8 @@ Hook.
 
 Docs: https://reactjs.org/docs/hooks-reference.html#useimperativehandle
 
-[Go top](#table-of-contents)
-[Previous](#setting-a-ref-to-a-function-component)
+[Go top](#table-of-contents) |
+[Previous](#setting-a-ref-to-a-function-component) |
 [Next](#reactforwardref)
 
 ```jsx
@@ -260,8 +260,8 @@ const FancyInputParent = () => {
 
 Docs: https://reactjs.org/docs/react-api.html#reactforwardref
 
-[Go top](#table-of-contents)
-[Previous](#useimperativehandle)
+[Go top](#table-of-contents) |
+[Previous](#useimperativehandle) |
 [Next](#forwarding-refs)
 
 <br />
@@ -272,5 +272,5 @@ Docs: https://reactjs.org/docs/react-api.html#reactforwardref
 
 Docs: https://reactjs.org/docs/forwarding-refs.html
 
-[Go top](#table-of-contents)
+[Go top](#table-of-contents) |
 [Previous](#reactforwardref)
