@@ -165,6 +165,8 @@ const MeasureExample = () => {
 }
 ```
 
+Also see [following example](#callback-refs).
+
 <br />
 <br />
 <br />
