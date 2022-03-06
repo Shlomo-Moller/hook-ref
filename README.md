@@ -26,7 +26,7 @@ Markdown, and some code examples, about React refs, from a function component pr
 
 Docs: https://reactjs.org/docs/hooks-reference.html#useref
 
-[Go top](#table-of-contents) |
+[Go top](#functional-react-refs) |
 [Previous](#table-of-contents) |
 [Next](#refs-and-the-dom)
 
@@ -73,7 +73,7 @@ instead.
 
 Docs: https://reactjs.org/docs/refs-and-the-dom.html
 
-[Go top](#table-of-contents) |
+[Go top](#functional-react-refs) |
 [Previous](#useref) |
 [Next](#store-values)
 
@@ -101,7 +101,7 @@ If you use React 16.2 or lower, or if you need more flexibility than provided by
 
 Docs: https://reactjs.org/docs/hooks-faq.html#is-there-something-like-instance-variables
 
-[Go top](#table-of-contents) |
+[Go top](#functional-react-refs) |
 [Previous](#refs-and-the-dom) |
 [Next](#measure-dom-node)
 
@@ -137,7 +137,7 @@ const Timer = () => {
 
 Docs: https://reactjs.org/docs/hooks-faq.html#how-can-i-measure-a-dom-node
 
-[Go top](#table-of-contents) |
+[Go top](#functional-react-refs) |
 [Previous](#store-values) |
 [Next](#callback-refs)
 
@@ -172,7 +172,7 @@ const MeasureExample = () => {
 
 Docs: https://reactjs.org/docs/refs-and-the-dom.html#callback-refs
 
-[Go top](#table-of-contents) |
+[Go top](#functional-react-refs) |
 [Previous](#measure-dom-node) |
 [Next](#setting-a-ref-to-a-function-component)
 
@@ -188,7 +188,7 @@ The callback receives the React component instance or HTML DOM element, which ca
 
 Docs: https://reactjs.org/docs/hooks-faq.html#can-i-make-a-ref-to-a-function-component
 
-[Go top](#table-of-contents) |
+[Go top](#functional-react-refs) |
 [Previous](#callback-refs) |
 [Next](#useimperativehandle)
 
@@ -204,7 +204,7 @@ Hook.
 
 Docs: https://reactjs.org/docs/hooks-reference.html#useimperativehandle
 
-[Go top](#table-of-contents) |
+[Go top](#functional-react-refs) |
 [Previous](#setting-a-ref-to-a-function-component) |
 [Next](#reactforwardref)
 
@@ -260,7 +260,7 @@ const FancyInputParent = () => {
 
 Docs: https://reactjs.org/docs/react-api.html#reactforwardref
 
-[Go top](#table-of-contents) |
+[Go top](#functional-react-refs) |
 [Previous](#useimperativehandle) |
 [Next](#forwarding-refs)
 
@@ -272,5 +272,5 @@ Docs: https://reactjs.org/docs/react-api.html#reactforwardref
 
 Docs: https://reactjs.org/docs/forwarding-refs.html
 
-[Go top](#table-of-contents) |
+[Go top](#functional-react-refs) |
 [Previous](#reactforwardref)
