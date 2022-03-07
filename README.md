@@ -8,6 +8,7 @@ Markdown, and some code examples, about React refs, from a function component pe
 
 ## Table of Contents
 
+* [The `ref` prop](#note-on-the-ref-prop)
 * [`useRef`](#useref)
 * [Refs and the DOM](#refs-and-the-dom)
 * [Store Values](#store-values)
@@ -23,12 +24,24 @@ Markdown, and some code examples, about React refs, from a function component pe
 <br />
 <br />
 
+## Note on the `ref` prop
+
+[Go top](#functional-react-refs) |
+[Previous](#table-of-contents) |
+[Next](#useref)
+
+`ref` is not a prop. Like `key`, it’s handled differently by React.
+
+<br />
+<br />
+<br />
+
 ## `useRef`
 
 Docs: https://reactjs.org/docs/hooks-reference.html#useref
 
 [Go top](#functional-react-refs) |
-[Previous](#table-of-contents) |
+[Previous](#note-on-the-ref-prop) |
 [Next](#refs-and-the-dom)
 
 ```jsx
@@ -304,7 +317,7 @@ const FancyButton = forwardRef((props, ref) => (
 
 const FancyButtonParent = () => {
 	const ref = useRef()
-	
+
 	return (
 		<FancyButton ref={ref} onClick={() => console.log(ref.current)}>
 			Click Me!
@@ -325,7 +338,58 @@ Docs: https://reactjs.org/docs/forwarding-refs.html
 [Previous](#reactforwardref) |
 [Next](#reactcreateref)
 
-**To be continued...**
+Ref forwarding is a technique for automatically passing a ref through a component to one of its children.
+This is typically not necessary for most components in the application.
+
+Most common use cases:
+
+### Forwarding refs to DOM components
+
+Usually a component won't obtain a ref to a child's inner DOM element / component.
+
+However, highly reusable “leaf” components like `FancyButton` or `MyTextInput` tend to be used throughout the application in a similar manner as a regular DOM `button` and `input`, and accessing their DOM nodes may be unavoidable for managing focus, selection, or animations.
+
+To allow "forwarding" a ref via `FancyButton` to its inner `button` element, do this:
+
+```jsx
+const FancyButton = forwardRef((props, ref) => (
+  <button ref={ref}>
+    {props.children}
+  </button>
+))
+
+// You can now get a ref directly to the DOM button:
+const ref = useRef()
+<FancyButton ref={ref}>Click me!</FancyButton>
+```
+
+**Note**
+
+The second `ref` argument only exists when you define a component with `React.forwardRef` call.
+Regular function or class components don’t receive the `ref` argument, and ref is not available in props either.
+
+Ref forwarding is not limited to DOM components.
+You can forward refs to class component instances, too.
+
+### Forwarding refs in [HOCs](https://reactjs.org/docs/higher-order-components.html 'Higher-Order Components')
+
+Say we have a HOC that logs all props of the wrapped component to the console.
+To log the wrapped component's `ref` attribute correctly, we have to use ref forwarding:
+
+```jsx
+const logProps = WrappedComponent => {
+  const LogProps = props => {
+    useEffect(() => console.log(props))
+		const { forwardedRef, ...rest } = props
+    return <WrappedComponent ref={forwardedRef} {...rest} />
+  }
+
+  return forwardRef((props, ref) => <LogProps {...props} forwardedRef={ref} />)
+}
+```
+
+**Also see**
+[Displaying a custom name in DevTools](https://reactjs.org/docs/forwarding-refs.html#displaying-a-custom-name-in-devtools).
 
 <br />
 <br />
